@@ -1,0 +1,20 @@
+
+{
+  "type": "object",
+  "schemaVersion": 1,
+  "title": "Realtor Scraper Input",
+  "properties": {
+    "startUrl": {
+      "title": "Realtor.com Search URL",
+      "type": "string",
+      "description": "Paste your Realtor.com saved search URL"
+    },
+    "maxPages": {
+      "title": "Max pages to scrape",
+      "type": "integer",
+      "default": 3,
+      "description": "Limits pagination to avoid rate limiting"
+    }
+  },
+  "required": ["startUrl"]
+}
